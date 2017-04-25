@@ -6,10 +6,11 @@ import GroupTable from './components/dash/GroupTable'
 const routes = [{
 	path: '/login',
 	component: LoginView,
-	alias: '/'
+	
 },{
 	path: '/dash',
 	component: DashView,
+	alias: '/',
 	auth: true,
 	children: [{
 		path: '',
